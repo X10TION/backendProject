@@ -27,7 +27,7 @@ app.use('/api/v1', router)
 app.use('/api/v1', public)
 
 //
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 8080
 mongoose.connect("mongodb+srv://MAUCES:MAUCES@cluster0.bwdex.mongodb.net/?retryWrites=true&w=majority")
 .then(() =>{
     app.listen(port, () => {
