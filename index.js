@@ -11,6 +11,8 @@ const public = require('./routes/publicResource')
 const courses = require('./routes/courses-routes')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
+const material = require('./routes/material')
+const schedule = require('./routes/scheduleLecture')
 const cors = require('cors')
 
 const app = express()
@@ -25,6 +27,8 @@ app.use(cors())
 app.use('/api/v1', courses)
 app.use('/api/v1', router)
 app.use('/api/v1', public)
+app.use('/api/v1', material)
+app.use('/api/v1', schedule)
 
 //
 const port = process.env.PORT || 8080
