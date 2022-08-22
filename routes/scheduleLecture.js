@@ -20,6 +20,7 @@ router.post('/schedule', async(req, res) => {
                 scheduleTime:req.body.time,
                 scheduleDate:req.body.date,
                 passcode,
+                createdBy:req.body.createdBy
             });
             await schedule.save()
             res.status(201).json(schedule)
