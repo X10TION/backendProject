@@ -9,6 +9,7 @@ const scheduleSchema =  new Schema({
     scheduleTime:String,
     scheduleDate:String,
     passcode:Number,
+    createdBy:String
 },
 {
     timestamps: true
