@@ -2,7 +2,7 @@ const express = require('express')
 const { createcourse, coursesViewed,material,lectureCreated,lectureJointed, singleCourse, deletedCourse }= require('../controller/course_controller')
 const upload = require('../middleware/fileUpload')
 const router = express.Router()
-
+// this file structure
 /////////////////COURSES ROUTE
 router.post('/courses', createcourse)
 router.get('/courses', coursesViewed)
